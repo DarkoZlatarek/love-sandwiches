@@ -3,7 +3,6 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import gspread
-from pprint import pprint
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -31,7 +30,7 @@ def get_sales_data():
         print("Data should be 6 numbers, separated by commas.")
         print("Example: 10,20,30,40,50,60\n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:\n")
 
         sales_data = data_str.split(",")
 
